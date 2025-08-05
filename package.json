@@ -1,15 +1,22 @@
 {
-    "name": "aws-access-control-system",
-    "main": "index.ts",
-    "devDependencies": {
-        "@types/node": "^18",
-        "typescript": "^5.0.0"
-    },
-    "dependencies": {
-        "@pulumi/aws": "^7.0.0",
-        "@pulumi/awsx": "^3.0.0",
-        "@pulumi/pulumi": "^3.113.0",
-        "csv-parser": "^3.2.0",
-        "fs-extra": "^11.3.0"
-    }
+  "name": "aws-access-control-system",
+  "version": "1.0.0",
+  "description": "An AWS access control system using Pulumi with TypeScript",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "deploy": "pulumi up",
+    "destroy": "pulumi destroy"
+  },
+  "dependencies": {
+    "@pulumi/pulumi": "^3.0.0",
+    "@pulumi/aws": "^6.0.0",
+    "csv-parse": "^5.5.0",
+    "fs-extra": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.0.0"
+  }
 }
